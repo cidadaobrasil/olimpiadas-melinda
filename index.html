@@ -1,0 +1,1366 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="dark light">
+  <title>Guia de Olimpíadas Científicas da Melinda</title>
+  <meta name="description" content="Olimpíadas de matemática, astronomia, lógica e ciências do 1º ano do Fundamental ao Ensino Médio: quando abrem, quem inscreve e o que rendem.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Guia de Olimpíadas Científicas da Melinda">
+  <meta property="og:description" content="Olimpíadas de matemática, astronomia, lógica e ciências do 1º ano do Fundamental ao Ensino Médio: quando abrem, quem inscreve e o que rendem.">
+  <meta property="og:url" content="https://cidadaobrasil.github.io/olimpiadas-melinda/">
+  <meta property="og:image" content="https://cidadaobrasil.github.io/olimpiadas-melinda/og-preview.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Átomo, livro aberto e estrelas: guia de olimpíadas científicas">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://cidadaobrasil.github.io/olimpiadas-melinda/og-preview.jpg">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+  <style>
+    :root {
+      --bg: #090D16;
+      --surface: #111827;
+      --surface-2: #1F2937;
+      --inset: rgba(0, 0, 0, 0.25);
+      --border: rgba(255, 255, 255, 0.09);
+      --border-strong: rgba(255, 255, 255, 0.22);
+      --text-strong: #FFFFFF;
+      --text: #E5E7EB;
+      --text-muted: #9CA3AF;
+      --text-dim: #7C8594;
+      --accent: #38BDF8;
+      --accent-soft: rgba(56, 189, 248, 0.12);
+      --accent-line: rgba(56, 189, 248, 0.35);
+      --on-accent: #06121E;
+      --green: #34D399;
+      --green-soft: rgba(16, 185, 129, 0.15);
+      --green-line: rgba(16, 185, 129, 0.45);
+      --amber: #FBBF24;
+      --amber-soft: rgba(245, 158, 11, 0.15);
+      --amber-line: rgba(245, 158, 11, 0.4);
+      --purple: #C4B5FD;
+      --purple-soft: rgba(167, 139, 250, 0.15);
+      --purple-line: rgba(167, 139, 250, 0.4);
+      --cyan: #67E8F9;
+      --cyan-soft: rgba(34, 211, 238, 0.13);
+      --cyan-line: rgba(34, 211, 238, 0.4);
+      --warn-bg: rgba(245, 158, 11, 0.1);
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+      --shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.4);
+      --ease: 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    @media (prefers-color-scheme: light) {
+      :root:not([data-theme="dark"]) {
+        --bg: #F5F7FB;
+        --surface: #FFFFFF;
+        --surface-2: #EEF2F7;
+        --inset: #F1F5F9;
+        --border: rgba(15, 23, 42, 0.1);
+        --border-strong: rgba(15, 23, 42, 0.25);
+        --text-strong: #0B1220;
+        --text: #1F2937;
+        --text-muted: #4B5563;
+        --text-dim: #5B6472;
+        --accent: #0369A1;
+        --accent-soft: rgba(3, 105, 161, 0.08);
+        --accent-line: rgba(3, 105, 161, 0.3);
+        --on-accent: #FFFFFF;
+        --green: #047857;
+        --green-soft: rgba(4, 120, 87, 0.1);
+        --green-line: rgba(4, 120, 87, 0.35);
+        --amber: #92400E;
+        --amber-soft: rgba(180, 83, 9, 0.1);
+        --amber-line: rgba(180, 83, 9, 0.35);
+        --purple: #6D28D9;
+        --purple-soft: rgba(109, 40, 217, 0.08);
+        --purple-line: rgba(109, 40, 217, 0.3);
+        --cyan: #0E7490;
+        --cyan-soft: rgba(14, 116, 144, 0.09);
+        --cyan-line: rgba(14, 116, 144, 0.35);
+        --warn-bg: #FFF7E6;
+        --shadow: 0 6px 18px -8px rgba(15, 23, 42, 0.18);
+      }
+    }
+
+    :root[data-theme="light"] {
+      --bg: #F5F7FB;
+      --surface: #FFFFFF;
+      --surface-2: #EEF2F7;
+      --inset: #F1F5F9;
+      --border: rgba(15, 23, 42, 0.1);
+      --border-strong: rgba(15, 23, 42, 0.25);
+      --text-strong: #0B1220;
+      --text: #1F2937;
+      --text-muted: #4B5563;
+      --text-dim: #5B6472;
+      --accent: #0369A1;
+      --accent-soft: rgba(3, 105, 161, 0.08);
+      --accent-line: rgba(3, 105, 161, 0.3);
+      --on-accent: #FFFFFF;
+      --green: #047857;
+      --green-soft: rgba(4, 120, 87, 0.1);
+      --green-line: rgba(4, 120, 87, 0.35);
+      --amber: #92400E;
+      --amber-soft: rgba(180, 83, 9, 0.1);
+      --amber-line: rgba(180, 83, 9, 0.35);
+      --purple: #6D28D9;
+      --purple-soft: rgba(109, 40, 217, 0.08);
+      --purple-line: rgba(109, 40, 217, 0.3);
+      --cyan: #0E7490;
+      --cyan-soft: rgba(14, 116, 144, 0.09);
+      --cyan-line: rgba(14, 116, 144, 0.35);
+      --warn-bg: #FFF7E6;
+      --shadow: 0 6px 18px -8px rgba(15, 23, 42, 0.18);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      padding-bottom: 64px;
+    }
+
+    a { color: var(--accent); }
+    a:hover { text-decoration: underline; }
+
+    :focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
+    }
+
+    .container {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+
+    @media (min-width: 640px) {
+      .container { padding: 0 24px; }
+    }
+
+    /* Topo */
+    header {
+      padding: 40px 0 32px;
+      border-bottom: 1px solid var(--border);
+      background: radial-gradient(circle at 50% 0%, var(--accent-soft) 0%, transparent 70%);
+    }
+
+    .top-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+
+    .badge-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 14px;
+      border-radius: 9999px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      background: var(--accent-soft);
+      color: var(--accent);
+      border: 1px solid var(--accent-line);
+    }
+
+    .theme-btn {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      border-radius: 9999px;
+      padding: 6px 14px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    h1 {
+      font-size: clamp(1.8rem, 4.5vw, 2.8rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.15;
+      margin-bottom: 14px;
+      color: var(--text-strong);
+    }
+
+    .hero-lead {
+      font-size: 1.08rem;
+      color: var(--text-muted);
+      max-width: 780px;
+    }
+
+    .stat-bar {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 210px), 1fr));
+      gap: 12px;
+      margin-top: 24px;
+    }
+
+    .stat-pill {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 14px 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .stat-pill .label {
+      font-size: 0.74rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-dim);
+      font-weight: 700;
+    }
+
+    .stat-pill .value {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text-strong);
+    }
+
+    .stat-pill .value.hl { color: var(--accent); }
+
+    /* Títulos de seção */
+    .section-head { margin: 48px 0 20px; }
+
+    .section-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: var(--text-strong);
+    }
+
+    .section-desc {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      margin-top: 2px;
+    }
+
+    /* Aviso de conferência */
+    .notice {
+      background: var(--warn-bg);
+      border: 1px solid var(--amber-line);
+      border-radius: var(--radius-md);
+      padding: 14px 18px;
+      font-size: 0.9rem;
+      color: var(--text);
+      margin-top: 28px;
+    }
+
+    .notice strong { color: var(--amber); }
+
+    /* Trilha */
+    .roadmap {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+      gap: 16px;
+    }
+
+    .phase-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 22px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      box-shadow: var(--shadow);
+    }
+
+    .phase-card.active-now {
+      border-color: var(--green-line);
+      background: linear-gradient(180deg, var(--green-soft) 0%, var(--surface) 60%);
+    }
+
+    .tag {
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 9999px;
+      width: fit-content;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      border: 1px solid;
+      white-space: nowrap;
+    }
+
+    .tag.now    { background: var(--green-soft);  color: var(--green);  border-color: var(--green-line); }
+    .tag.y2     { background: var(--cyan-soft);   color: var(--cyan);   border-color: var(--cyan-line); }
+    .tag.f1     { background: var(--amber-soft);  color: var(--amber);  border-color: var(--amber-line); }
+    .tag.fund2  { background: var(--purple-soft); color: var(--purple); border-color: var(--purple-line); }
+
+    .phase-title { font-size: 1.1rem; font-weight: 700; color: var(--text-strong); }
+    .phase-years { font-size: 0.85rem; color: var(--text-dim); font-weight: 600; margin-top: -6px; }
+
+    .phase-items {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    .phase-items li { position: relative; padding-left: 16px; }
+    .phase-items li::before {
+      content: "";
+      position: absolute;
+      left: 2px;
+      top: 0.62em;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+    .phase-items strong { color: var(--text); }
+
+    /* Calendário 2027 */
+    .timeline {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+    }
+
+    .tl-row {
+      display: grid;
+      grid-template-columns: 120px 1fr;
+      gap: 16px;
+      padding: 14px 20px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .tl-row:last-child { border-bottom: none; }
+
+    .tl-when { font-weight: 700; color: var(--accent); font-size: 0.92rem; }
+    .tl-what { font-size: 0.92rem; color: var(--text-muted); }
+    .tl-what strong { color: var(--text-strong); }
+    .tl-who {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      padding: 1px 8px;
+      border-radius: 6px;
+      margin-left: 6px;
+      vertical-align: 1px;
+      background: var(--surface-2);
+      color: var(--text-muted);
+    }
+
+    @media (max-width: 560px) {
+      .tl-row { grid-template-columns: 1fr; gap: 2px; padding: 12px 16px; }
+    }
+
+    /* Filtros */
+    .controls-panel {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 18px;
+      margin-bottom: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .search-label {
+      display: block;
+      font-size: 0.74rem;
+      color: var(--text-dim);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 6px;
+    }
+
+    .search-input {
+      width: 100%;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 11px 14px;
+      color: var(--text-strong);
+      font-size: 1rem;
+      outline: none;
+    }
+
+    .search-input:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px var(--accent-soft);
+    }
+
+    .pill-filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .group-label {
+      font-size: 0.74rem;
+      color: var(--text-dim);
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      margin-right: 2px;
+      width: 100%;
+    }
+
+    @media (min-width: 720px) {
+      .group-label { width: auto; min-width: 88px; }
+    }
+
+    .filter-btn {
+      background: transparent;
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      padding: 6px 13px;
+      border-radius: 9999px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background var(--ease), color var(--ease);
+    }
+
+    .filter-btn:hover { color: var(--text-strong); background: var(--surface-2); }
+
+    .filter-btn[aria-pressed="true"] {
+      background: var(--accent);
+      color: var(--on-accent);
+      border-color: var(--accent);
+    }
+
+    .results-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      margin-bottom: 16px;
+    }
+
+    .link-btn {
+      background: none;
+      border: none;
+      color: var(--accent);
+      font: inherit;
+      font-weight: 600;
+      cursor: pointer;
+      padding: 0;
+    }
+
+    .link-btn:hover { text-decoration: underline; }
+
+    .empty {
+      display: none;
+      text-align: center;
+      padding: 40px 16px;
+      border: 1px dashed var(--border-strong);
+      border-radius: var(--radius-md);
+      color: var(--text-muted);
+    }
+
+    /* Cards */
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 22px;
+      box-shadow: var(--shadow);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 18px;
+      transition: border-color var(--ease), transform var(--ease);
+    }
+
+    .card[hidden] { display: none; }
+
+    .card:hover { border-color: var(--border-strong); transform: translateY(-3px); }
+
+    .card-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 12px;
+    }
+
+    .card-title { font-size: 1.22rem; font-weight: 700; color: var(--text-strong); line-height: 1.25; }
+    .card-subtitle { font-size: 0.84rem; color: var(--text-dim); font-weight: 600; margin-top: 2px; }
+
+    .meta-list {
+      display: flex;
+      flex-direction: column;
+      margin-top: 14px;
+      font-size: 0.88rem;
+    }
+
+    .meta-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 12px;
+      padding: 6px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .meta-label { color: var(--text-dim); font-size: 0.8rem; font-weight: 600; flex-shrink: 0; }
+    .meta-val { font-weight: 600; color: var(--text); text-align: right; }
+    .meta-val.green { color: var(--green); }
+    .meta-val.blue { color: var(--accent); }
+
+    .card-desc { font-size: 0.92rem; color: var(--text-muted); line-height: 1.55; margin-top: 14px; }
+
+    .card-box {
+      background: var(--inset);
+      border-left: 3px solid var(--accent);
+      padding: 10px 14px;
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      font-size: 0.86rem;
+      color: var(--text);
+      margin-top: 12px;
+    }
+
+    .card-box strong { color: var(--text-strong); }
+
+    .card-warn {
+      background: var(--warn-bg);
+      border-left: 3px solid var(--amber);
+      padding: 8px 14px;
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      font-size: 0.82rem;
+      color: var(--text);
+      margin-top: 10px;
+    }
+
+    .card-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+      padding-top: 12px;
+      border-top: 1px solid var(--border);
+    }
+
+    .cycle { font-size: 0.82rem; color: var(--text-dim); }
+
+    .btn-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--accent-soft);
+      border: 1px solid var(--accent-line);
+      color: var(--accent);
+      padding: 7px 14px;
+      border-radius: var(--radius-sm);
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .btn-link:hover { background: var(--accent); color: var(--on-accent); text-decoration: none; }
+
+    /* Benefícios */
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 290px), 1fr));
+      gap: 20px;
+    }
+
+    .benefit-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 22px;
+      box-shadow: var(--shadow);
+    }
+
+    .benefit-box .icon { font-size: 1.8rem; margin-bottom: 10px; }
+    .benefit-box h3 { font-size: 1.12rem; color: var(--text-strong); margin-bottom: 8px; }
+    .benefit-box p { font-size: 0.92rem; color: var(--text-muted); line-height: 1.55; }
+
+    /* Plano de ação */
+    .checklist-card {
+      background: linear-gradient(135deg, var(--surface-2) 0%, var(--surface) 100%);
+      border: 1px solid var(--accent-line);
+      border-radius: var(--radius-lg);
+      padding: 28px 22px;
+      margin-top: 48px;
+      box-shadow: var(--shadow);
+    }
+
+    @media (min-width: 640px) { .checklist-card { padding: 34px; } }
+
+    .checklist-card h2 { font-size: 1.45rem; color: var(--text-strong); font-weight: 800; }
+    .checklist-card > p { color: var(--text-muted); font-size: 0.95rem; margin-top: 4px; }
+
+    .checklist-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
+      gap: 16px;
+      margin-top: 22px;
+      list-style: none;
+    }
+
+    .check-step {
+      background: var(--inset);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .step-num {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: var(--accent);
+      color: var(--on-accent);
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.9rem;
+    }
+
+    .step-title { font-size: 1.02rem; font-weight: 700; color: var(--text-strong); }
+    .step-desc { font-size: 0.88rem; color: var(--text-muted); }
+    .step-desc strong { color: var(--text); }
+
+    .btn-primary {
+      margin-top: 26px;
+      background: var(--text-strong);
+      color: var(--bg);
+      border: none;
+      padding: 10px 20px;
+      border-radius: var(--radius-sm);
+      font-size: 0.9rem;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    /* Fontes e rodapé */
+    .sources {
+      margin-top: 48px;
+      font-size: 0.84rem;
+      color: var(--text-muted);
+    }
+
+    .sources h2 { font-size: 1.05rem; color: var(--text-strong); margin-bottom: 8px; }
+    .sources ul { padding-left: 18px; display: grid; gap: 3px; }
+
+    footer {
+      margin-top: 40px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      color: var(--text-dim);
+      font-size: 0.84rem;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { transition: none !important; }
+      .card:hover { transform: none; }
+    }
+
+    /* Impressão: sempre claro, todos os cards, sem controles */
+    @media print {
+      :root {
+        --bg: #FFFFFF; --surface: #FFFFFF; --surface-2: #FFFFFF; --inset: #F3F4F6;
+        --border: #D1D5DB; --border-strong: #9CA3AF;
+        --text-strong: #111827; --text: #1F2937; --text-muted: #374151; --text-dim: #4B5563;
+        --accent: #1D4ED8; --accent-soft: #FFFFFF; --accent-line: #93C5FD;
+        --green: #047857; --green-soft: #FFFFFF; --amber: #92400E; --amber-soft: #FFFFFF;
+        --purple: #6D28D9; --purple-soft: #FFFFFF; --cyan: #0E7490; --cyan-soft: #FFFFFF;
+        --warn-bg: #FFFFFF; --shadow: none;
+      }
+      body { padding: 0; }
+      header { background: none; padding-top: 0; }
+      .controls-panel, .results-bar, .empty, .btn-primary, .theme-btn, .btn-link { display: none !important; }
+      .card[hidden] { display: flex !important; }
+      .card, .phase-card, .benefit-box, .check-step, .tl-row { break-inside: avoid; }
+      .card:hover { transform: none; }
+      a { text-decoration: underline; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <div class="top-row">
+        <div class="badge-pill"><span aria-hidden="true">⭐</span> Planejamento educacional de longo prazo</div>
+        <button class="theme-btn" id="themeBtn" type="button">Tema: automático</button>
+      </div>
+      <h1>Guia de Olimpíadas Científicas da Melinda</h1>
+      <p class="hero-lead">
+        As competições que valem a pena, do 1º ano do Fundamental ao Ensino Médio: quando cada uma abre, quem faz a inscrição e o que ela rende lá na frente.
+      </p>
+
+      <div class="stat-bar">
+        <div class="stat-pill">
+          <span class="label">Aluna</span>
+          <span class="value">Melinda</span>
+        </div>
+        <div class="stat-pill">
+          <span class="label">Momento escolar</span>
+          <span class="value hl">1º ano EF em 2026</span>
+        </div>
+        <div class="stat-pill">
+          <span class="label">Competições mapeadas</span>
+          <span class="value">17, com datas do ciclo 2026</span>
+        </div>
+        <div class="stat-pill">
+          <span class="label">Meta de longo prazo</span>
+          <span class="value">Vagas olímpicas e bolsas</span>
+        </div>
+      </div>
+
+      <p class="hero-lead" style="margin-top:18px"><a href="timo.html" style="color:var(--accent);font-weight:600">→ Guia da prova do TIMO de outubro de 2026</a></p>
+
+      <div class="notice">
+        <strong>Dados conferidos nos sites oficiais em 28/09/2026 e atualizados em 29/09/2026</strong> (calendário oficial da Mathletes, FLL Explore e xadrez). Datas, taxas e séries mudam a cada edição. Antes de cada inscrição, confirme no regulamento do ano. Os itens marcados com <strong>[conferir]</strong> não tiveram confirmação completa na fonte oficial.
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- Trilha -->
+    <section class="section-head" aria-labelledby="t-trilha">
+      <h2 class="section-title" id="t-trilha">Trilha da Melinda, ano a ano</h2>
+      <p class="section-desc">Do estímulo lúdico às portas do ensino superior.</p>
+    </section>
+
+    <div class="roadmap">
+      <div class="phase-card active-now">
+        <span class="tag now">Agora (2026 e 2027)</span>
+        <div class="phase-title">Fase 1: Estímulo lúdico</div>
+        <div class="phase-years">1º e 2º ano EF (6 a 8 anos)</div>
+        <ul class="phase-items">
+          <li><strong>OBA Nível 1</strong> e <strong>OBAFOG Nível 1:</strong> astronomia e foguete de canudo, pela escola.</li>
+          <li><strong>TIMO 2026: inscrita.</strong> Prova online de 02 a 04/10; resultado previsto para 13/11. <a href="timo.html">Veja o guia da prova</a>.</li>
+          <li><strong>SASMO, NJIO e TIMO:</strong> os pais inscrevem direto pela Mathletes; prova online em casa.</li>
+          <li><strong>FLL Explore</strong> (robótica em equipe de garagem) e <strong>xadrez Sub-08</strong>: também sem depender da escola.</li>
+          <li><strong>Em 2027 (2º ano):</strong> entram a <strong>OBMEP Mirim 1</strong> (pela escola) e a <strong>AMO</strong> (pelos pais).</li>
+          <li><strong>Em casa:</strong> jogos de lógica, tangram, blocos e provas antigas como brincadeira.</li>
+        </ul>
+      </div>
+
+      <div class="phase-card">
+        <span class="tag f1">2028 a 2030</span>
+        <div class="phase-title">Fase 2: Construção da base</div>
+        <div class="phase-years">3º ao 5º ano EF (8 a 11 anos)</div>
+        <ul class="phase-items">
+          <li><strong>Canguru:</strong> Nível P (3º e 4º) e Nível E (5º), prova em março.</li>
+          <li><strong>Desafio Bebras</strong> e <strong>ONC Nível Júnior:</strong> abrem no 3º ano.</li>
+          <li><strong>OBMEP Mirim 2</strong> (4º e 5º) e <strong>OBI Iniciação Júnior</strong> (lógica no papel).</li>
+        </ul>
+      </div>
+
+      <div class="phase-card">
+        <span class="tag fund2">2031 a 2034</span>
+        <div class="phase-title">Fase 3: Alto rendimento</div>
+        <div class="phase-years">6º ao 9º ano EF (11 a 15 anos)</div>
+        <ul class="phase-items">
+          <li><strong>OBMEP Níveis 1 e 2:</strong> medalha dá acesso ao PIC (a bolsa em dinheiro só vale para aluno de escola pública).</li>
+          <li><strong>OBM:</strong> quem vai bem na OBMEP é convidado.</li>
+          <li><strong>OBI Programação</strong> e <strong>ONC:</strong> código de verdade e ciências integradas.</li>
+        </ul>
+      </div>
+
+      <div class="phase-card">
+        <span class="tag fund2">2035 a 2037</span>
+        <div class="phase-title">Fase 4: Colheita</div>
+        <div class="phase-years">1ª à 3ª série EM (15 a 17 anos)</div>
+        <ul class="phase-items">
+          <li><strong>Vagas olímpicas:</strong> entrada sem vestibular (Unicamp, USP e outras; a lista de olimpíadas aceitas muda todo ano).</li>
+          <li><strong>Exterior:</strong> premiações do Ensino Médio pesam no portfólio para universidades estrangeiras.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Calendário 2027 -->
+    <section class="section-head" aria-labelledby="t-cal">
+      <h2 class="section-title" id="t-cal">O que dá para fazer em 2027 (2º ano)</h2>
+      <p class="section-desc">Projeção pelas datas do ciclo 2026. As datas exatas de 2027 saem nos editais. Cada item com inscrição tem lembrete na agenda da família, um dia antes da abertura prevista.</p>
+    </section>
+
+    <div class="timeline">
+      <div class="tl-row">
+        <div class="tl-when">Fev a mar</div>
+        <div class="tl-what"><strong>SASMO:</strong> inscrição até o fim de março, prova no início de abril. <span class="tl-who">Pais</span></div>
+      </div>
+      <div class="tl-row">
+        <div class="tl-when">Mar a abr</div>
+        <div class="tl-what"><strong>Falar com a escola</strong> sobre OBA, OBAFOG e OBMEP Mirim. As três dependem de a escola se inscrever. <span class="tl-who">Pais</span></div>
+      </div>
+      <div class="tl-row">
+        <div class="tl-when">Até 1º de maio</div>
+        <div class="tl-what"><strong>OBA e OBAFOG:</strong> prazo da escola para inscrever. A prova da OBA em 2026 foi em 15 de maio. <span class="tl-who">Escola</span></div>
+      </div>
+      <div class="tl-row">
+        <div class="tl-when">Início de maio</div>
+        <div class="tl-what"><strong>NJIO</strong> (pensamento computacional): em 2026, inscrição até 08/05 e prova de 15 a 17/05. <span class="tl-who">Pais</span></div>
+      </div>
+      <div class="tl-row">
+        <div class="tl-when">Abr a jun</div>
+        <div class="tl-what"><strong>OBMEP Mirim 1:</strong> escola inscreve (em 2026 foi de 28/04 a 08/06). Escola particular paga taxa se quiser premiação. <span class="tl-who">Escola</span></div>
+      </div>
+      <div class="tl-row">
+        <div class="tl-when">Agosto</div>
+        <div class="tl-what"><strong>OBMEP Mirim, 1ª fase</strong> (em 2026: 25 de agosto). <span class="tl-who">Escola</span></div>
+      </div>
+      <div class="tl-row">
+        <div class="tl-when">Fim de setembro</div>
+        <div class="tl-what"><strong>TIMO:</strong> em 2026, inscrição até 28/09 e prova de 02 a 04/10. <span class="tl-who">Pais</span></div>
+      </div>
+      <div class="tl-row">
+        <div class="tl-when">Outubro</div>
+        <div class="tl-what"><strong>AMO:</strong> primeira edição em que ela pode entrar (Grade 2). Em 2026, inscrição até 16/10 e prova de 23 a 25/10. <span class="tl-who">Pais</span></div>
+      </div>
+      <div class="tl-row">
+        <div class="tl-when">Novembro</div>
+        <div class="tl-what"><strong>OBMEP Mirim, 2ª fase</strong> (em 2026: 10 de novembro), para os classificados. <span class="tl-who">Escola</span></div>
+      </div>
+      <div class="tl-row">
+        <div class="tl-when">Dezembro</div>
+        <div class="tl-what"><strong>Canguru 2028:</strong> as escolas começam a se inscrever para a prova de março, já no 3º ano dela. <span class="tl-who">Escola</span></div>
+      </div>
+    </div>
+
+    <!-- Catálogo -->
+    <section class="section-head" aria-labelledby="t-cat">
+      <h2 class="section-title" id="t-cat">Catálogo das competições</h2>
+      <p class="section-desc">Filtre por momento de entrada, área ou forma de inscrição.</p>
+    </section>
+
+    <div class="controls-panel">
+      <div>
+        <label class="search-label" for="searchInput">Buscar</label>
+        <input type="search" id="searchInput" class="search-input" placeholder="Olimpíada, área, benefício... (acento não importa)" autocomplete="off">
+      </div>
+
+      <div class="pill-filters" data-group="stage" role="group" aria-label="Momento de entrada">
+        <span class="group-label">MOMENTO</span>
+        <button type="button" class="filter-btn" data-value="all" aria-pressed="true">Todas</button>
+        <button type="button" class="filter-btn" data-value="now" aria-pressed="false">Já pode (1º ano)</button>
+        <button type="button" class="filter-btn" data-value="y2" aria-pressed="false">2º ano (2027)</button>
+        <button type="button" class="filter-btn" data-value="f1" aria-pressed="false">3º ao 5º ano</button>
+        <button type="button" class="filter-btn" data-value="fund2" aria-pressed="false">6º ano em diante</button>
+      </div>
+
+      <div class="pill-filters" data-group="cat" role="group" aria-label="Área">
+        <span class="group-label">ÁREA</span>
+        <button type="button" class="filter-btn" data-value="all" aria-pressed="true">Todas</button>
+        <button type="button" class="filter-btn" data-value="mat" aria-pressed="false">Matemática</button>
+        <button type="button" class="filter-btn" data-value="astro" aria-pressed="false">Astronomia e espaço</button>
+        <button type="button" class="filter-btn" data-value="comp" aria-pressed="false">Lógica e computação</button>
+        <button type="button" class="filter-btn" data-value="sci" aria-pressed="false">Ciências</button>
+      </div>
+
+      <div class="pill-filters" data-group="enroll" role="group" aria-label="Forma de inscrição">
+        <span class="group-label">INSCRIÇÃO</span>
+        <button type="button" class="filter-btn" data-value="all" aria-pressed="true">Qualquer</button>
+        <button type="button" class="filter-btn" data-value="individual" aria-pressed="false">Pais inscrevem direto</button>
+        <button type="button" class="filter-btn" data-value="school" aria-pressed="false">Só pela escola</button>
+      </div>
+    </div>
+
+    <div class="results-bar">
+      <span id="resultCount" aria-live="polite"></span>
+      <button type="button" class="link-btn" id="clearBtn">Limpar filtros</button>
+    </div>
+
+    <div class="cards-grid" id="cardsGrid"></div>
+    <div class="empty" id="emptyState">Nenhuma competição com esses filtros. <button type="button" class="link-btn" id="clearBtn2">Limpar filtros</button></div>
+
+    <!-- Benefícios -->
+    <section class="section-head" aria-labelledby="t-ben">
+      <h2 class="section-title" id="t-ben">O retorno no longo prazo</h2>
+      <p class="section-desc">O que as olimpíadas rendem além da medalha.</p>
+    </section>
+
+    <div class="benefits-grid">
+      <div class="benefit-box">
+        <div class="icon" aria-hidden="true">🎓</div>
+        <h3>Vagas olímpicas (sem vestibular)</h3>
+        <p>
+          Unicamp, USP e outras universidades públicas reservam vagas para medalhistas de olimpíadas. A Unicamp publica todo ano a lista das competições aceitas (OBMEP, OBM, OBI, OBA, ONC e Canguru já apareceram nela). O que conta são as premiações do Ensino Médio.
+        </p>
+      </div>
+
+      <div class="benefit-box">
+        <div class="icon" aria-hidden="true">🌎</div>
+        <h3>Portfólio para o exterior</h3>
+        <p>
+          Universidades dos EUA e da Europa olham as atividades extracurriculares. O que pesa ali são resultados do Ensino Médio (OBMEP, OBM, OBI e, no topo, IMO e IOI). As provas internacionais dos primeiros anos servem como treino e motivação, não como credencial.
+        </p>
+      </div>
+
+      <div class="benefit-box">
+        <div class="icon" aria-hidden="true">💡</div>
+        <h3>Resiliência e autonomia</h3>
+        <p>
+          Problema olímpico não tem resposta pronta de livro. A criança aprende a testar caminhos, desenhar, errar sem frustração e achar a saída sozinha. Esse é o ganho que vale desde já, com ou sem medalha.
+        </p>
+      </div>
+    </div>
+
+    <!-- Plano de ação -->
+    <div class="checklist-card">
+      <h2>Plano de ação dos pais</h2>
+      <p>Três passos para começar sem pressão e com foco no prazer de aprender.</p>
+
+      <ol class="checklist-grid">
+        <li class="check-step">
+          <div class="step-num" aria-hidden="true">1</div>
+          <div class="step-title">Conversa com a coordenação</div>
+          <div class="step-desc">
+            É o passo mais importante: <strong>OBA, OBAFOG, OBMEP Mirim, Canguru, Bebras e ONC só aceitam inscrição pela escola</strong>. Pergunte se o colégio já participa e peça para incluir a OBMEP Mirim em 2027 (2º ano). OBA, OBAFOG e Bebras são gratuitas.
+          </div>
+        </li>
+
+        <li class="check-step">
+          <div class="step-num" aria-hidden="true">2</div>
+          <div class="step-title">Cadastro na Mathletes</div>
+          <div class="step-desc">
+            Conta de aluno criada em 29/09/2026 em <a href="https://olimpiadasinternacionais.org" target="_blank" rel="noopener">olimpiadasinternacionais.org</a>. Serve para acompanhar SASMO, NJIO, TIMO e AMO (o <a href="https://olimpiadasinternacionais.org/calendario" target="_blank" rel="noopener">calendário</a> mostra todas as datas). A prova online exige dois aparelhos (um para a prova, outro para a câmera). Taxas em 2026: R$ 139,90 a R$ 149,90.
+          </div>
+        </li>
+
+        <li class="check-step">
+          <div class="step-num" aria-hidden="true">3</div>
+          <div class="step-title">Desafios em família</div>
+          <div class="step-desc">
+            Baixe provas antigas da OBA Nível 1 (site da OBA) e da OBMEP Mirim 1. Resolvam juntos no fim de semana, com desenho e sem cronômetro. Canguru Nível P fica para 2028.
+          </div>
+        </li>
+      </ol>
+
+      <button class="btn-primary" type="button" onclick="window.print()">Imprimir ou salvar em PDF</button>
+    </div>
+
+    <!-- Fontes -->
+    <section class="sources" aria-labelledby="t-fontes">
+      <h2 id="t-fontes">Fontes consultadas (28/09/2026)</h2>
+      <ul>
+        <li><a href="https://olimpiadamirim.obmep.org.br/" target="_blank" rel="noopener">Olimpíada Mirim OBMEP</a> e <a href="https://www.obmep.org.br/pic.htm" target="_blank" rel="noopener">PIC OBMEP</a></li>
+        <li><a href="https://www.oba.org.br" target="_blank" rel="noopener">OBA e OBAFOG</a> (regulamento da 29ª OBA, 2026)</li>
+        <li><a href="https://www.cangurudematematicabrasil.com.br/regulamento" target="_blank" rel="noopener">Canguru de Matemática Brasil, regulamento</a></li>
+        <li><a href="https://www.bebrasbrasil.com.br/regulamento" target="_blank" rel="noopener">Desafio Bebras Brasil, regulamento</a></li>
+        <li><a href="https://www.onciencias.org/" target="_blank" rel="noopener">ONC, página oficial</a></li>
+        <li><a href="https://olimpiada.ic.unicamp.br/info/regulamento/" target="_blank" rel="noopener">OBI, regulamento</a></li>
+        <li><a href="https://olimpiadasinternacionais.org/sasmo/" target="_blank" rel="noopener">SASMO na Mathletes</a>, <a href="https://amo.simcc.org/" target="_blank" rel="noopener">AMO (SIMCC)</a> e <a href="https://conferenceservices.siu.edu/conferences/amo.php" target="_blank" rel="noopener">AMO (SIU)</a></li>
+        <li><a href="https://olimpiadasinternacionais.org/calendario" target="_blank" rel="noopener">Calendário 2026 da Mathletes</a>, <a href="https://olimpiadasinternacionais.org/timo/" target="_blank" rel="noopener">TIMO</a>, <a href="https://olimpiadasinternacionais.org/smc/" target="_blank" rel="noopener">SMC</a> e <a href="https://olimpiadasinternacionais.org/nextgen-math" target="_blank" rel="noopener">Next Gen Math</a> (29/09/2026)</li>
+        <li><a href="https://www.firstlegoleague.com.br/first-lego-league-explore" target="_blank" rel="noopener">FIRST LEGO League Explore Brasil</a> e <a href="https://cbx.org.br/cadastro" target="_blank" rel="noopener">cadastro da CBX</a> (29/09/2026)</li>
+        <li><a href="https://www.comvest.unicamp.br/ingresso-2026/vagas-olimpicas-2026/" target="_blank" rel="noopener">Vagas Olímpicas Unicamp 2026</a></li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>Guia de Olimpíadas Científicas da Melinda • <a href="timo.html">Guia da prova do TIMO 2026</a></p>
+      <p style="margin-top: 4px;">Revisado em 29/09/2026 para o ciclo 2026/2027 • confira sempre o regulamento oficial de cada competição</p>
+    </footer>
+
+  </main>
+
+  <script>
+    // Dados das competições. Para atualizar, edite só esta lista.
+    const COMPETICOES = [
+      {
+        stage: 'now', cat: 'mat', enroll: 'individual',
+        title: 'SASMO', sub: 'Singapore and Asian Schools Math Olympiad', badge: 'Já pode',
+        meta: [
+          ['Séries', 'Do 1º ano EF (Primary 1) ao EM', 'green'],
+          ['Inscrição', 'Pais (individual) ou escola', 'blue'],
+          ['Formato', 'Online em casa (com câmera) ou impressa na escola'],
+          ['No Brasil', 'Mathletes (olimpiadasinternacionais.org)']
+        ],
+        desc: 'Criada em 2006 pelo SIMCC de Singapura, é uma das maiores da Ásia. Mistura matemática da escola com problemas de raciocínio fora do padrão, bons para começar cedo.',
+        box: ['Benefício', 'Medalhistas podem disputar as finais internacionais do mesmo grupo (SIMOC, Singapore Math Global Finals).'],
+        cycle: 'Inscrição até fim de março; prova no início de abril',
+        url: 'https://olimpiadasinternacionais.org/sasmo/', link: 'SASMO na Mathletes'
+      },
+      {
+        stage: 'now', cat: 'mat', enroll: 'individual',
+        title: 'TIMO', sub: 'Thailand International Mathematical Olympiad', badge: 'Já pode',
+        meta: [
+          ['Séries', 'Do Jardim II ao EM', 'green'],
+          ['Inscrição', 'Pais (individual) ou escola', 'blue'],
+          ['Formato', 'Online em casa (com câmera) ou impressa na escola'],
+          ['No Brasil', 'Mathletes (olimpiadasinternacionais.org)']
+        ],
+        desc: 'Olimpíada internacional de matemática com níveis desde a educação infantil. É a segunda prova do ano que os pais podem inscrever sozinhos, no segundo semestre.',
+        box: ['Benefício', 'Medalhistas podem disputar a TIMO Final (online ou presencial em Bangkok).'],
+        cycle: '2026: inscrição até 28/09, prova de 02 a 04/10; taxa R$ 149,90',
+        url: 'https://olimpiadasinternacionais.org/timo/', link: 'TIMO na Mathletes'
+      },
+      {
+        stage: 'now', cat: 'comp', enroll: 'individual',
+        title: 'NJIO', sub: 'National Junior Informatics Olympiad', badge: 'Já pode',
+        meta: [
+          ['Séries', 'Do 1º ano EF ao EM', 'green'],
+          ['Inscrição', 'Pais (individual) ou escola', 'blue'],
+          ['Formato', 'Online ou impressa na escola'],
+          ['No Brasil', 'Mathletes (olimpiadasinternacionais.org)']
+        ],
+        desc: 'Prova de pensamento computacional: lógica, padrões e sequências, sem precisar programar. É a alternativa ao Bebras para quem ainda não chegou ao 3º ano.',
+        box: ['Por que importa', 'Única prova de lógica e computação que ela já pode fazer sem depender da escola.'],
+        cycle: '2026: inscrição até 08/05, prova de 15 a 17/05; taxa R$ 139,90',
+        url: 'https://olimpiadasinternacionais.org/drct/', link: 'NJIO na Mathletes'
+      },
+      {
+        stage: 'now', cat: 'mat', enroll: 'individual',
+        title: 'Next Gen Math', sub: 'Competição nova da Mathletes (1ª edição em 2026)', badge: 'Série [conferir]',
+        meta: [
+          ['Séries', 'Não informada no site [conferir]'],
+          ['Inscrição', 'Pela plataforma da Mathletes [conferir se é individual]', 'blue'],
+          ['Formato', '25 questões de múltipla escolha em 50 minutos, sem calculadora'],
+          ['No Brasil', 'Mathletes (olimpiadasinternacionais.org)']
+        ],
+        desc: 'Lançada em setembro de 2026, junto com as versões de Ciências e de Inglês. Ainda não há histórico de edições anteriores.',
+        box: ['Situação', 'Única prova de matemática com inscrição aberta no fim de 2026 que talvez aceite o 1º ano.'],
+        warn: 'O site não diz a partir de qual série. Pergunte à Mathletes antes de inscrever.',
+        cycle: '2026: inscrição até 24/10, prova em 31/10 e 01/11; taxa R$ 139,90',
+        url: 'https://olimpiadasinternacionais.org/nextgen-math', link: 'Next Gen Math'
+      },
+      {
+        stage: 'now', cat: 'comp', enroll: 'individual',
+        title: 'FIRST LEGO League Explore', sub: 'Programa internacional de ciência e robótica, em equipe', badge: 'Já pode',
+        meta: [
+          ['Idade', '6 a 10 anos', 'green'],
+          ['Inscrição', 'Escola ou equipe de garagem (pais, sem vínculo com escola)', 'blue'],
+          ['Formato', 'Equipe de até 6 crianças, 12 sessões com kit LEGO da temporada'],
+          ['No Brasil', 'Educacional (grupo Positivo)']
+        ],
+        desc: 'A equipe cumpre uma missão temática da temporada com peças LEGO e o SPIKE Essential, e apresenta o projeto. Dá para montar com primos ou amigos.',
+        box: ['Caminho', 'Tem eventos local, regional, nacional e internacional. Aos 9 anos abre a FLL Challenge, operada pelo SESI.'],
+        warn: 'O site não informa o preço. É preciso comprar o kit da temporada; pergunte o custo em firstlegoleague@positivo.com.br.',
+        cycle: 'Temporada 2026/2027 com inscrições abertas',
+        url: 'https://www.firstlegoleague.com.br/first-lego-league-explore', link: 'FLL Explore Brasil'
+      },
+      {
+        stage: 'now', cat: 'comp', enroll: 'individual',
+        title: 'Xadrez Sub-08', sub: 'Torneios oficiais por faixa etária (CBX e FPX)', badge: 'Já pode',
+        meta: [
+          ['Categoria', 'Sub-08 (alguns torneios regionais têm Sub-06) [conferir]', 'green'],
+          ['Inscrição', 'Individual: cadastro na CBX feito pelo responsável', 'blue'],
+          ['Formato', 'Torneios presenciais ao longo do ano'],
+          ['Em SP', 'Federação Paulista de Xadrez (fpx.com.br)']
+        ],
+        desc: 'Não é olimpíada, mas é o treino de raciocínio, foco e tomada de decisão mais tradicional para essa idade. Ensina a lidar com vitória e derrota.',
+        box: ['Vantagem', 'Calendário o ano todo, sem esperar edital.'],
+        warn: 'O cadastro na CBX tem anuidade e é confirmado pela CBX em até 48 horas.',
+        cycle: 'Etapas regionais e estaduais durante o ano todo',
+        url: 'https://cbx.org.br/cadastro', link: 'Cadastro na CBX'
+      },
+      {
+        stage: 'now', cat: 'astro', enroll: 'school',
+        title: 'OBA', sub: 'Olimpíada Brasileira de Astronomia e Astronáutica', badge: 'Já pode',
+        meta: [
+          ['Séries', 'Nível 1: 1º ao 3º ano EF', 'green'],
+          ['Inscrição', 'Só pela escola (gratuita)'],
+          ['Formato', 'Prova na escola, até 2 horas'],
+          ['Realização', 'Sociedade Astronômica Brasileira e AEB']
+        ],
+        desc: 'A melhor porta de entrada para os primeiros anos. A prova do Nível 1 é ilustrada e fala de Sol, planetas, Terra, Lua e foguetes.',
+        box: ['Estímulo', 'Distribui muitas medalhas para incentivar o gosto pela ciência desde cedo.'],
+        cycle: '2026: inscrição da escola até 01/05, prova em 15/05',
+        url: 'https://www.oba.org.br', link: 'Site da OBA'
+      },
+      {
+        stage: 'now', cat: 'astro', enroll: 'school',
+        title: 'OBAFOG', sub: 'Olimpíada Brasileira de Foguetes (antiga MOBFOG)', badge: 'Já pode',
+        meta: [
+          ['Séries', 'Nível 1: 1º ao 3º ano EF', 'green'],
+          ['Inscrição', 'Só pela escola (gratuita)'],
+          ['Formato', 'Prática: construir e lançar um foguete'],
+          ['Realização', 'Organizadores da OBA']
+        ],
+        desc: 'No Nível 1 a criança constrói um foguete de canudo de refresco, lançado com ar comprimido por bomba de encher pneu de bicicleta. Vence quem chega mais longe.',
+        box: ['Fator lúdico', 'Experimento de verdade, ao ar livre, com medição de distância.'],
+        cycle: 'Inscrição junto com a OBA; lançamentos no 1º semestre',
+        url: 'https://www.oba.org.br', link: 'Site da OBA/OBAFOG'
+      },
+      {
+        stage: 'now', cat: 'mat', enroll: 'school',
+        title: 'SMC (SINGA Math)', sub: 'Singapore Math Challenge', badge: 'Já pode (pela escola)',
+        meta: [
+          ['Séries', 'Do 1º ano EF ao EM', 'green'],
+          ['Inscrição', 'Só pela escola'],
+          ['Formato', 'Impressa ou digital, sempre feita na escola'],
+          ['No Brasil', 'Mathletes (olimpiadasinternacionais.org)']
+        ],
+        desc: 'Baseada no método de Singapura (concreto, pictórico e abstrato), com foco em raciocínio e modelagem com barras em vez de decoreba.',
+        box: ['Diferencial', 'Medalhistas de SMC, SASMO e AMO podem disputar a final global online (Singapore Math Global Finals).'],
+        warn: 'Taxa por escola em 2026: R$ 889 (particular) ou R$ 289 (pública). Os pais não conseguem inscrever sozinhos.',
+        cycle: '2026: escola inscreve até 30/09, prova de 05 a 18/10',
+        url: 'https://olimpiadasinternacionais.org/smc/', link: 'SMC na Mathletes'
+      },
+      {
+        stage: 'y2', cat: 'mat', enroll: 'school',
+        title: 'OBMEP Mirim', sub: 'Olimpíada Mirim OBMEP (substituiu a antiga OBMEP Nível A)', badge: '2º ano (2027)',
+        meta: [
+          ['Séries', 'Mirim 1: 2º e 3º ano • Mirim 2: 4º e 5º ano', 'green'],
+          ['Inscrição', 'Só pela escola, pública ou particular'],
+          ['Formato', '2 fases, 15 questões objetivas'],
+          ['Realização', 'IMPA / OBMEP']
+        ],
+        desc: 'A versão da OBMEP para os anos iniciais. Questões que valorizam raciocínio acima de contas decoradas, no mesmo estilo da OBMEP principal.',
+        box: ['Por que importa', 'É a primeira olimpíada nacional oficial que ela pode fazer, já no 2º ano, e prepara para a OBMEP do 6º ano.'],
+        warn: 'Escola particular paga taxa por aluno na modalidade com premiação.',
+        cycle: '2026: inscrição 28/04 a 08/06; fases em 25/08 e 10/11',
+        url: 'https://olimpiadamirim.obmep.org.br/', link: 'Olimpíada Mirim'
+      },
+      {
+        stage: 'y2', cat: 'mat', enroll: 'individual',
+        title: 'AMO', sub: 'American Mathematics Olympiad', badge: '2º ano (2027)',
+        meta: [
+          ['Séries', 'Grade 2 (2º ano EF) ao EM'],
+          ['Inscrição', 'Pais (individual) ou escola', 'blue'],
+          ['Formato', 'Online ou presencial'],
+          ['Realização', 'SIMCC e Southern Illinois University']
+        ],
+        desc: 'Montada sobre o currículo americano (Common Core). Treina resolução de problemas e familiariza com o formato das provas internacionais.',
+        box: ['Benefício', 'Medalhistas podem disputar as finais internacionais do grupo SIMCC.'],
+        cycle: '2026: inscrição até 16/10, prova de 23 a 25/10; taxa R$ 149,90',
+        url: 'https://olimpiadasinternacionais.org/amo', link: 'AMO na Mathletes'
+      },
+      {
+        stage: 'f1', cat: 'mat', enroll: 'school',
+        title: 'Canguru de Matemática', sub: 'Kangourou sans Frontières', badge: 'A partir do 3º ano',
+        meta: [
+          ['Séries', 'Nível P: 3º e 4º • Nível E: 5º e 6º'],
+          ['Inscrição', 'Só pela escola (taxa por pacote)'],
+          ['Formato', 'Online ou presencial, a escola escolhe'],
+          ['Alcance', 'Dezenas de países']
+        ],
+        desc: 'Uma das maiores competições escolares do mundo. Múltipla escolha, provas divertidas que medem lógica e visão espacial sem cobrar conteúdo adiantado.',
+        box: ['No futuro', 'Já apareceu na lista de olimpíadas aceitas nas vagas olímpicas da Unicamp.'],
+        cycle: 'Escola inscreve de dezembro a março; prova em março',
+        url: 'https://www.cangurudematematicabrasil.com.br', link: 'Site oficial'
+      },
+      {
+        stage: 'f1', cat: 'comp', enroll: 'school',
+        title: 'Desafio Bebras', sub: 'Bebras Brasil, olimpíada de pensamento computacional', badge: 'A partir do 3º ano',
+        meta: [
+          ['Séries', '3º ano EF ao 3º ano EM'],
+          ['Inscrição', 'Só pela escola (gratuita)'],
+          ['Formato', 'Online, 12 questões em 1 hora'],
+          ['Foco', 'Lógica sem saber programar']
+        ],
+        desc: 'Criado na Lituânia e adotado em dezenas de países. As questões são quebra-cabeças visuais que ensinam a pensar como cientista da computação.',
+        box: ['Vantagem', 'Desenvolve decomposição de problemas e raciocínio estruturado, base para a OBI.'],
+        cycle: 'Prova no início de outubro (2026: 01 a 07/10)',
+        url: 'https://www.bebrasbrasil.com.br', link: 'Bebras Brasil'
+      },
+      {
+        stage: 'f1', cat: 'sci', enroll: 'school',
+        title: 'ONC', sub: 'Olimpíada Nacional de Ciências', badge: 'A partir do 3º ano',
+        meta: [
+          ['Séries', 'Nível Júnior: 3º ao 5º ano; segue até o EM'],
+          ['Inscrição', 'Só pela escola (o professor cadastra)'],
+          ['Formato', '2 fases online'],
+          ['Realização', 'SBF, ABQ, Butantan, SAB e Unicamp']
+        ],
+        desc: 'Junta astronomia, biologia, física, química e história da ciência numa prova só. Boa para criança curiosa por experimentos e natureza.',
+        box: ['No futuro', 'Já apareceu na lista de olimpíadas aceitas nas vagas olímpicas da Unicamp.'],
+        cycle: '2026: 1ª fase em agosto, 2ª fase em setembro',
+        url: 'https://www.onciencias.org', link: 'Portal ONC'
+      },
+      {
+        stage: 'f1', cat: 'comp', enroll: 'school',
+        title: 'OBI Iniciação', sub: 'Olimpíada Brasileira de Informática', badge: '4º e 5º ano',
+        meta: [
+          ['Séries', 'Nível Júnior: 4º e 5º ano EF'],
+          ['Inscrição', 'Só pela escola'],
+          ['Formato', 'Lógica no papel, sem computador'],
+          ['Realização', 'SBC e Instituto de Computação da Unicamp']
+        ],
+        desc: 'Na modalidade Iniciação a criança não programa: resolve charadas, labirintos e regras que simulam algoritmos, em múltipla escolha.',
+        box: ['Caminho', 'Porta de entrada para a OBI Programação, que é a que pesa nas vagas olímpicas de computação.'],
+        cycle: 'Fases entre maio e agosto',
+        url: 'https://olimpiada.ic.unicamp.br', link: 'Portal OBI'
+      },
+      {
+        stage: 'fund2', cat: 'mat', enroll: 'school',
+        title: 'OBMEP', sub: 'Olimpíada Brasileira de Matemática das Escolas Públicas (aceita particulares)', badge: '6º ano em diante',
+        meta: [
+          ['Níveis', 'N1: 6º e 7º • N2: 8º e 9º • N3: EM'],
+          ['Inscrição', 'Só pela escola, pública ou particular'],
+          ['Formato', '2 fases presenciais'],
+          ['Benefício', 'PIC Jr + vagas olímpicas', 'green']
+        ],
+        desc: 'A olimpíada mais importante do país. Medalhistas entram no PIC, programa de iniciação científica com aulas de aprofundamento.',
+        box: ['Peso universitário', 'Medalha conta em editais de vagas olímpicas (Unicamp, USP e outras).'],
+        warn: 'A bolsa mensal do CNPq no PIC só é paga a aluno de escola pública. Aluno de particular faz o PIC sem bolsa.',
+        cycle: '1ª fase no 1º semestre, 2ª fase em outubro',
+        url: 'https://www.obmep.org.br', link: 'Portal OBMEP'
+      },
+      {
+        stage: 'fund2', cat: 'mat', enroll: 'school',
+        title: 'OBM', sub: 'Olimpíada Brasileira de Matemática', badge: 'Alto desempenho',
+        meta: [
+          ['Séries', '6º ano EF ao universitário'],
+          ['Entrada', 'Classificação via OBMEP'],
+          ['Formato', 'Prova discursiva, com demonstrações'],
+          ['Destino', 'Seleções para IMO, EGMO e Cone Sul', 'blue']
+        ],
+        desc: 'O topo da matemática nacional. Exige demonstração e criatividade, e é dela que saem as equipes brasileiras nas olimpíadas internacionais.',
+        box: ['Meninas na ciência', 'Seleciona a equipe do Brasil para a EGMO, olimpíada europeia de matemática para garotas.'],
+        cycle: 'Fases no 2º semestre',
+        url: 'https://www.obm.org.br', link: 'Portal OBM'
+      }
+    ];
+
+    const STAGE_CLASS = { now: 'now', y2: 'y2', f1: 'f1', fund2: 'fund2' };
+    const CAT_NAME = { mat: 'matemática', astro: 'astronomia espaço', comp: 'lógica computação programação', sci: 'ciências' };
+
+    function el(tag, cls, text) {
+      const n = document.createElement(tag);
+      if (cls) n.className = cls;
+      if (text != null) n.textContent = text;
+      return n;
+    }
+
+    function labeled(cls, label, text) {
+      const n = el('div', cls);
+      n.append(el('strong', null, label + ': '), document.createTextNode(text));
+      return n;
+    }
+
+    const normalize = s => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
+
+    const grid = document.getElementById('cardsGrid');
+    const cards = COMPETICOES.map(c => {
+      const card = el('article', 'card');
+      const body = el('div');
+
+      const top = el('div', 'card-top');
+      const titles = el('div');
+      titles.append(el('h3', 'card-title', c.title), el('div', 'card-subtitle', c.sub));
+      top.append(titles, el('span', 'tag ' + STAGE_CLASS[c.stage], c.badge));
+
+      const meta = el('div', 'meta-list');
+      c.meta.forEach(([label, val, color]) => {
+        const row = el('div', 'meta-row');
+        row.append(el('span', 'meta-label', label), el('span', 'meta-val' + (color ? ' ' + color : ''), val));
+        meta.append(row);
+      });
+
+      body.append(top, meta, el('p', 'card-desc', c.desc), labeled('card-box', c.box[0], c.box[1]));
+      if (c.warn) body.append(labeled('card-warn', 'Atenção', c.warn));
+
+      const bottom = el('div', 'card-bottom');
+      const a = el('a', 'btn-link', c.link + ' ↗');
+      a.href = c.url;
+      a.target = '_blank';
+      a.rel = 'noopener';
+      bottom.append(el('span', 'cycle', c.cycle), a);
+
+      card.append(body, bottom);
+      grid.append(card);
+      return { data: c, node: card, text: normalize(card.textContent + ' ' + CAT_NAME[c.cat]) };
+    });
+
+    // Filtros e busca
+    const state = { stage: 'all', cat: 'all', enroll: 'all' };
+    const searchInput = document.getElementById('searchInput');
+    const countEl = document.getElementById('resultCount');
+    const emptyEl = document.getElementById('emptyState');
+
+    function apply() {
+      const term = normalize(searchInput.value.trim());
+      let shown = 0;
+      cards.forEach(({ data, node, text }) => {
+        const ok = (!term || text.includes(term))
+          && (state.stage === 'all' || data.stage === state.stage)
+          && (state.cat === 'all' || data.cat === state.cat)
+          && (state.enroll === 'all' || data.enroll === state.enroll);
+        node.hidden = !ok;
+        if (ok) shown++;
+      });
+      countEl.textContent = shown === cards.length
+        ? `Mostrando as ${shown} competições`
+        : `Mostrando ${shown} de ${cards.length} competições`;
+      emptyEl.style.display = shown ? 'none' : 'block';
+    }
+
+    function setGroup(group, value) {
+      state[group] = value;
+      document.querySelectorAll(`[data-group="${group}"] .filter-btn`).forEach(b => {
+        b.setAttribute('aria-pressed', String(b.dataset.value === value));
+      });
+    }
+
+    document.querySelectorAll('.pill-filters').forEach(groupEl => {
+      groupEl.addEventListener('click', e => {
+        const btn = e.target.closest('.filter-btn');
+        if (!btn) return;
+        setGroup(groupEl.dataset.group, btn.dataset.value);
+        apply();
+      });
+    });
+
+    function clearAll() {
+      searchInput.value = '';
+      ['stage', 'cat', 'enroll'].forEach(g => setGroup(g, 'all'));
+      apply();
+    }
+
+    document.getElementById('clearBtn').addEventListener('click', clearAll);
+    document.getElementById('clearBtn2').addEventListener('click', clearAll);
+    searchInput.addEventListener('input', apply);
+    apply();
+
+    // Tema: automático, claro ou escuro (lembrado neste navegador)
+    const themeBtn = document.getElementById('themeBtn');
+    const THEMES = ['auto', 'light', 'dark'];
+    const THEME_LABEL = { auto: 'automático', light: 'claro', dark: 'escuro' };
+    let theme = 'auto';
+    try { theme = localStorage.getItem('guia-olimpiadas-tema') || 'auto'; } catch (e) {}
+
+    function setTheme(t) {
+      theme = t;
+      if (t === 'auto') document.documentElement.removeAttribute('data-theme');
+      else document.documentElement.setAttribute('data-theme', t);
+      themeBtn.textContent = 'Tema: ' + THEME_LABEL[t];
+      try { localStorage.setItem('guia-olimpiadas-tema', t); } catch (e) {}
+    }
+
+    themeBtn.addEventListener('click', () => setTheme(THEMES[(THEMES.indexOf(theme) + 1) % THEMES.length]));
+    setTheme(theme);
+  </script>
+</body>
+</html>
